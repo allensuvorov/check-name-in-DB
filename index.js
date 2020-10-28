@@ -1,8 +1,14 @@
-const {Builder, By, Key, util} = require("selenium-webdriver");
+const {Builder, By, Key, util, WebDriver} = require("selenium-webdriver");
 
 async function example() {
-    let parent = driver.getWindowHandle();
-    let windows = driver.getAllWindowHandles();
+    
+    // one idea: first we need to get session ID
+    // WebDriver.getSession
+    // webdriver.WebDriver.attachToSession // - to work with an open browser session
+    
+    // another idea:
+    // let parent = driver.getWindowHandle();
+    // let windows = driver.getAllWindowHandles();
 
     // driver.switchTo().window(windows[1]);
 
